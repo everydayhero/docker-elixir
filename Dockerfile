@@ -17,4 +17,6 @@ RUN set -xe \
         && make install PREFIX=/usr/local \
         && rm -rf /usr/src/elixir
 
+RUN mix local.hex --force
+
 CMD ["elixir"]
